@@ -22,6 +22,9 @@ const stringToUpperCase = (stringValue) => {
 
     return upperString;
 }
-    
-console.log(stringToUpperCase("yeet meat treat feet"));
-// stringToUpperCase();
+
+const multiplyArrayAndReturnPosOrNeg = (arrayOfNumbers) => {
+    let total = arrayOfNumbers.reduce((acc, cur) => acc * cur);
+    return total > 0 ? "Positive" : total < 0 ? "Negative" : "Zero";
+}
+
